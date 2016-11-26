@@ -37,7 +37,8 @@ for element_3 in data:
 
 #listings Data
 data_listings = []
-with open('listings.txt',encoding="utf8") as f_1:
+#with open('listings.txt',encoding="utf8") as f_1: #windows
+with open('listings.txt') as f_1:  #Linux
     for line_2 in f_1:
         data_listings.append(json.loads(line_2))
 #listngs Manufacturers
